@@ -1,0 +1,513 @@
+import {
+  BusinessDetails,
+  NavItem,
+  ProductCategory,
+  ProductItem,
+  StoryMilestone,
+  Testimonial,
+} from '@/lib/types';
+
+export const business: BusinessDetails = {
+  name: 'Muzda Bakery',
+  tagline: 'A family bakery built on passion, tradition & community since 1964.',
+  phone: '020 8472 6021',
+  whatsapp: '447000000000',
+  email: 'hello@muzdabakery.co.uk',
+  addressLines: ['129 Green Street', 'Forest Gate', 'London E7 8JF'],
+  mapsEmbedUrl:
+    'https://www.google.com/maps?q=129%20Green%20St%2C%20London%20E7%208JF&output=embed',
+  hours: [
+    { day: 'Monday', hours: '8:00am - 7:00pm' },
+    { day: 'Tuesday', hours: '8:00am - 7:00pm' },
+    { day: 'Wednesday', hours: '8:00am - 7:00pm' },
+    { day: 'Thursday', hours: '8:00am - 7:00pm' },
+    { day: 'Friday', hours: '8:00am - 7:30pm' },
+    { day: 'Saturday', hours: '8:00am - 7:30pm' },
+    { day: 'Sunday', hours: '9:00am - 6:00pm' },
+  ],
+};
+
+export const navigation: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'Our Story', href: '/about' },
+  { label: 'Products', href: '/products' },
+  { label: 'Order', href: '/order' },
+  { label: 'Reviews', href: '/reviews' },
+  { label: 'Contact', href: '/contact' },
+];
+
+export const productCategories: ProductCategory[] = [
+  {
+    slug: 'biscuits',
+    title: 'Biscuits',
+    description: 'Traditional bakery biscuits made for tea trays, gifting, and everyday visits.',
+  },
+  {
+    slug: 'toasts',
+    title: 'Toasts',
+    description: 'Crunchy twice-baked favourites with the signature bakery flavour regulars come back for.',
+  },
+  {
+    slug: 'savoury-snacks',
+    title: 'Savoury Snacks',
+    description: 'Classic savouries for sharing, quick lunches, and family gatherings.',
+  },
+  {
+    slug: 'asian-specialities',
+    title: 'Asian Specialities',
+    description: 'House staples and festive favourites rooted in family recipes and local demand.',
+  },
+  {
+    slug: 'frozen-products',
+    title: 'Frozen Products',
+    description: 'Convenient take-home staples for busy households and bulk shoppers.',
+  },
+];
+
+export const products: ProductItem[] = [
+  {
+    slug: 'aflatun',
+    category: 'biscuits',
+    name: 'Aflatun',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'almond-and-pista',
+    category: 'biscuits',
+    name: 'Almond & Pista',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.30',
+  },
+  {
+    slug: 'almond-naan-khatay',
+    category: 'biscuits',
+    name: 'Almond Naan Khatay',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'amdawadi',
+    category: 'biscuits',
+    name: 'Amdawadi',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'butter-puffs',
+    category: 'biscuits',
+    name: 'Butter Puffs',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.35',
+  },
+  {
+    slug: 'cake-rusk-large',
+    category: 'biscuits',
+    name: 'Cake Rusk (Large)',
+    description: 'Crisp rusks, great with chai.',
+    price: '£3.30',
+  },
+  {
+    slug: 'cake-rusk-small',
+    category: 'biscuits',
+    name: 'Cake Rusk (Small)',
+    description: 'Crisp rusks, great with chai.',
+    price: '£2.10',
+  },
+  {
+    slug: 'chocolate-flavour-rings',
+    category: 'biscuits',
+    name: 'Chocolate Flavour Rings',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'cocoa-biscuit',
+    category: 'biscuits',
+    name: 'Cocoa Biscuit',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'coconut-cake-rusk',
+    category: 'biscuits',
+    name: 'Coconut Cake Rusk',
+    description: 'Crisp rusks, great with chai.',
+    price: '£3.00',
+  },
+  {
+    slug: 'coconut-colour',
+    category: 'biscuits',
+    name: 'Coconut Colour',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'coconut-naan-khatay',
+    category: 'biscuits',
+    name: 'Coconut Naan Khatay',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'vanilla-cream-roll',
+    category: 'biscuits',
+    name: 'Vanilla Cream Roll',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'fairy-cake',
+    category: 'biscuits',
+    name: 'Fairy Cake',
+    description: 'Bakery cake favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'fruit-rusk',
+    category: 'biscuits',
+    name: 'Fruit Rusk',
+    description: 'Crisp rusks, great with chai.',
+    price: '£2.10',
+  },
+  {
+    slug: 'genoese-cake',
+    category: 'biscuits',
+    name: 'Genoese Cake',
+    description: 'Bakery cake favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'jam-biscuit',
+    category: 'biscuits',
+    name: 'Jam Biscuit',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'jeera-biscuit-bag',
+    category: 'biscuits',
+    name: 'Jeera Biscuit Bag',
+    description: 'Classic jeera flavour.',
+    price: '£2.10',
+  },
+  {
+    slug: 'jeera-biscuit-tray',
+    category: 'biscuits',
+    name: 'Jeera Biscuit Tray',
+    description: 'Classic jeera flavour.',
+    price: '£2.10',
+  },
+  {
+    slug: 'jeera-puffs',
+    category: 'biscuits',
+    name: 'Jeera Puffs',
+    description: 'Bakery favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'khari-purwali',
+    category: 'biscuits',
+    name: 'Khari / Purwali',
+    description: 'Light, layered bakery pastry.',
+    price: '£2.75',
+  },
+  {
+    slug: 'khari-tray',
+    category: 'biscuits',
+    name: 'Khari Tray',
+    description: 'Light, layered bakery pastry.',
+    price: '£2.10',
+  },
+  {
+    slug: 'plain-genoese-cake',
+    category: 'biscuits',
+    name: 'Plain Genoese Cake',
+    description: 'Bakery cake favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'plain-naan-khatay',
+    category: 'biscuits',
+    name: 'Plain Naan Khatay',
+    description: 'Bakery biscuit favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'sada-jeera-bag',
+    category: 'biscuits',
+    name: 'Sada Jeera Bag',
+    description: 'Classic jeera flavour.',
+    price: '£2.10',
+  },
+  {
+    slug: 'sada-jeera-tray',
+    category: 'biscuits',
+    name: 'Sada Jeera Tray',
+    description: 'Classic jeera flavour.',
+    price: '£2.10',
+  },
+  {
+    slug: 'sweet-puffs',
+    category: 'biscuits',
+    name: 'Sweet Puffs',
+    description: 'Bakery favourite.',
+    price: '£2.20',
+  },
+  {
+    slug: 'tea-rusk',
+    category: 'biscuits',
+    name: 'Tea Rusk',
+    description: 'Crisp rusks, great with chai.',
+    price: '£2.10',
+  },
+  {
+    slug: 'mawa-toast',
+    category: 'toasts',
+    name: 'Mawa Toast',
+    description: 'Bakery toast favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'toast-bag',
+    category: 'toasts',
+    name: 'Toast Bag',
+    description: 'Bakery toast favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'toast-tray',
+    category: 'toasts',
+    name: 'Toast Tray',
+    description: 'Bakery toast favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'tutti-frutti-biscuit',
+    category: 'toasts',
+    name: 'Tutti Frutti Biscuit',
+    description: 'Bakery favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'tutti-frutti-toast',
+    category: 'toasts',
+    name: 'Tutti Frutti Toast',
+    description: 'Bakery toast favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'waryali-toast',
+    category: 'toasts',
+    name: 'Waryali Toast',
+    description: 'Bakery toast favourite.',
+    price: '£2.10',
+  },
+  {
+    slug: 'namak-para',
+    category: 'savoury-snacks',
+    name: 'Namak Para',
+    description: 'Snack favourite.',
+    price: '£1.75',
+  },
+  {
+    slug: 'sakar-para',
+    category: 'savoury-snacks',
+    name: 'Sakar Para',
+    description: 'Snack favourite.',
+    price: '£1.75',
+  },
+  {
+    slug: 'rolls',
+    category: 'savoury-snacks',
+    name: 'Rolls',
+    description: 'Bakery staple.',
+    price: '£1.20',
+  },
+  {
+    slug: 'naan',
+    category: 'asian-specialities',
+    name: 'Naan',
+    description: 'Bakery staple.',
+    price: '£2.00',
+    badge: 'Order Ahead',
+  },
+  {
+    slug: 'pizza-base',
+    category: 'asian-specialities',
+    name: 'Pizza Base',
+    description: 'Bakery staple.',
+    price: '£2.00',
+  },
+  {
+    slug: 'sojee-laddoo',
+    category: 'asian-specialities',
+    name: 'Sojee Laddoo',
+    description: 'Traditional sweet.',
+    price: '£6.50',
+  },
+  {
+    slug: 'magaj',
+    category: 'asian-specialities',
+    name: 'Magaj',
+    description: 'Traditional sweet.',
+    price: '£5.00',
+  },
+  {
+    slug: 'methi-paak',
+    category: 'asian-specialities',
+    name: 'Methi Paak',
+    description: 'Traditional sweet.',
+    price: '£7.99',
+  },
+  {
+    slug: 'cheese-balls',
+    category: 'frozen-products',
+    name: 'Cheese Balls',
+    description: 'Frozen item for easy prep at home.',
+    price: '£5.99',
+  },
+  {
+    slug: 'chicken-and-cheese-pastry',
+    category: 'frozen-products',
+    name: 'Chicken & Cheese Pastry',
+    description: 'Frozen item for easy prep at home.',
+    price: '£6.49',
+  },
+  {
+    slug: 'chicken-and-veg-pastry',
+    category: 'frozen-products',
+    name: 'Chicken & Veg Pastry',
+    description: 'Frozen item for easy prep at home.',
+    price: '£6.49',
+  },
+  {
+    slug: 'chicken-crescent',
+    category: 'frozen-products',
+    name: 'Chicken Crescent',
+    description: 'Frozen item for easy prep at home.',
+    price: '£8.99',
+  },
+  {
+    slug: 'chicken-kebab-rolls',
+    category: 'frozen-products',
+    name: 'Chicken Kebab Rolls',
+    description: 'Frozen item for easy prep at home.',
+    price: '£5.99',
+  },
+  {
+    slug: 'chicken-samosa',
+    category: 'frozen-products',
+    name: 'Chicken Samosa',
+    description: 'Frozen item for easy prep at home.',
+    price: '£5.99',
+  },
+  {
+    slug: 'chicken-spring-roll',
+    category: 'frozen-products',
+    name: 'Chicken Spring Roll',
+    description: 'Frozen item for easy prep at home.',
+    price: '£5.99',
+  },
+  {
+    slug: 'chicken-sticks',
+    category: 'frozen-products',
+    name: 'Chicken Sticks',
+    description: 'Frozen item for easy prep at home.',
+    price: '£9.99',
+  },
+  {
+    slug: 'chicken-tikka-pastry',
+    category: 'frozen-products',
+    name: 'Chicken Tikka Pastry',
+    description: 'Frozen item for easy prep at home.',
+    price: '£6.49',
+  },
+  {
+    slug: 'meat-pastry',
+    category: 'frozen-products',
+    name: 'Meat Pastry',
+    description: 'Frozen item for easy prep at home.',
+    price: '£6.49',
+  },
+  {
+    slug: 'mini-chicken-sticks',
+    category: 'frozen-products',
+    name: 'Mini Chicken Sticks',
+    description: 'Frozen item for easy prep at home.',
+    price: '£9.99',
+  },
+  {
+    slug: 'potato-vada',
+    category: 'frozen-products',
+    name: 'Potato Vada',
+    description: 'Frozen item for easy prep at home.',
+    price: '£7.99',
+  },
+];
+
+export const storyMilestones: StoryMilestone[] = [
+  {
+    year: '1964',
+    title: 'The first ovens were lit',
+    copy:
+      'Muzda Bakery began with family recipes, long mornings, and a clear idea: make honest bakery food that people would keep coming back for.',
+    accent: 'Founding family chapter',
+  },
+  {
+    year: '1980s',
+    title: 'A neighbourhood regular',
+    copy:
+      'The bakery became a familiar stop for tea-time biscuits, savouries, and fresh bread, growing by word of mouth rather than flash.',
+    accent: 'Community roots',
+  },
+  {
+    year: '2000s',
+    title: 'From one generation to the next',
+    copy:
+      'Knowledge, recipes, and standards were passed forward, keeping the family character intact while serving a wider local crowd.',
+    accent: 'Grandfather to grandson',
+  },
+  {
+    year: 'Today',
+    title: 'Still made with the same care',
+    copy:
+      'The bakery continues to serve East London with the same mix of craft, familiarity, and everyday reliability that built its reputation.',
+    accent: 'Serving East London',
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Amina H.',
+    quote:
+      'The biscuits taste like they always have. You can tell this is a bakery that values consistency and family tradition.',
+    context: 'Local customer',
+  },
+  {
+    name: 'Imran K.',
+    quote:
+      'Fresh naan, great savouries, and staff who actually know their customers. It feels like a proper neighbourhood bakery.',
+    context: 'Repeat order customer',
+  },
+  {
+    name: 'Sadia R.',
+    quote:
+      'We always pick up trays for family gatherings. The quality is dependable and the flavours feel authentic, not mass-produced.',
+    context: 'Family celebrations',
+  },
+];
+
+export const trustPoints = [
+  'Family-run across generations',
+  'Serving East London since 1964',
+  'Fresh bakery staples and order-ahead naan',
+  'In-store payment after confirmation',
+];
+
+export const collectionWindows = [
+  '9:00am - 11:00am',
+  '11:00am - 1:00pm',
+  '1:00pm - 4:00pm',
+  '4:00pm - 6:30pm',
+];
