@@ -37,6 +37,23 @@ export interface Testimonial {
   context: string;
 }
 
+export interface SimplyHumiBakesCategory {
+  title: string;
+  description: string;
+}
+
+export interface SimplyHumiBakesDetails {
+  name: string;
+  instagramUrl: string;
+  whatsapp: string;
+  whatsappMessage: string;
+  about: string;
+  categories: SimplyHumiBakesCategory[];
+  occasions: string[];
+  orderingSteps: string[];
+  testimonials: Testimonial[];
+}
+
 export interface BusinessDetails {
   name: string;
   tagline: string;

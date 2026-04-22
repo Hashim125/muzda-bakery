@@ -3,6 +3,7 @@ import {
   NavItem,
   ProductCategory,
   ProductItem,
+  SimplyHumiBakesDetails,
   StoryMilestone,
   Testimonial,
 } from '@/lib/types';
@@ -31,10 +32,65 @@ export const navigation: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Our Story', href: '/about' },
   { label: 'Products', href: '/products' },
+  { label: 'Simply Humi Bakes', href: '/simply-humi-bakes' },
   { label: 'Order', href: '/order' },
   { label: 'Reviews', href: '/reviews' },
   { label: 'Contact', href: '/contact' },
 ];
+
+export const simplyHumiBakes: SimplyHumiBakesDetails = {
+  name: 'Simply Humi Bakes',
+  instagramUrl: 'https://www.instagram.com/simplyhumibakes/',
+  whatsapp: business.whatsapp,
+  whatsappMessage:
+    "Hi Simply Humi Bakes, I'd like to enquire about a dessert order. My date is [date], occasion is [occasion], and I'm looking for [dessert type/servings].",
+  about:
+    'Simply Humi Bakes is the dessert side of the Muzda family: celebration bakes, sweet trays, and made-to-order treats for the moments that need something a little more special.',
+  categories: [
+    {
+      title: 'Celebration Cakes',
+      description: 'Custom cakes for birthdays, family gatherings, and special tables.',
+    },
+    {
+      title: 'Cupcakes',
+      description: 'Soft, giftable boxes made for parties, thank-yous, and weekend treats.',
+    },
+    {
+      title: 'Brownies',
+      description: 'Rich bakes for gifting, grazing tables, and sweet late-night cravings.',
+    },
+    {
+      title: 'Custom Orders',
+      description: 'A flexible enquiry route for themes, colours, flavours, and serving sizes.',
+    },
+  ],
+  occasions: ['Birthdays', 'Eid', 'Weddings', 'Gifting', 'Family gatherings', 'Custom themes'],
+  orderingSteps: [
+    'Send a WhatsApp message with your date, occasion, and dessert idea.',
+    'Share the serving size, flavour preferences, colours, and any inspiration photos.',
+    'Confirm the final details, timing, and collection or delivery arrangements.',
+  ],
+  testimonials: [
+    {
+      name: 'Aaliyah M.',
+      quote:
+        'The dessert table looked beautiful and everything disappeared so quickly. It felt personal, fresh, and made with real care.',
+      context: 'Birthday order',
+    },
+    {
+      name: 'Farah K.',
+      quote:
+        'The cupcakes were packed perfectly and tasted even better than they looked. We ordered again for the next family gathering.',
+      context: 'Gift box customer',
+    },
+    {
+      name: 'Sameera R.',
+      quote:
+        'Really easy to arrange over WhatsApp, with helpful suggestions on portions and flavours. The tray was exactly what we needed.',
+      context: 'Family event',
+    },
+  ],
+};
 
 export const productCategories: ProductCategory[] = [
   {

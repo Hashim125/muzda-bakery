@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 
 interface HeroMediaCardProps {
   label: string;
   title: string;
   description: string;
-  image: string;
-  secondaryImage?: string;
+  image: string | StaticImageData;
+  secondaryImage?: string | StaticImageData;
   secondaryLabel?: string;
 }
 
