@@ -3,9 +3,10 @@ interface PageHeroProps {
   title: string;
   description: string;
   media?: React.ReactNode;
+  actions?: React.ReactNode;
 }
 
-export default function PageHero({ eyebrow, title, description, media }: PageHeroProps) {
+export default function PageHero({ eyebrow, title, description, media, actions }: PageHeroProps) {
   return (
     <section className="hero-grain overflow-hidden bg-[#6a2a38] text-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
@@ -18,6 +19,7 @@ export default function PageHero({ eyebrow, title, description, media }: PageHer
               {title}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f3e6e1]">{description}</p>
+            {actions ? <div className="mt-8 flex flex-col gap-4 sm:flex-row">{actions}</div> : null}
           </div>
           {media}
         </div>

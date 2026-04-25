@@ -30,13 +30,13 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-5 xl:gap-8 lg:flex">
             {navigation.map((item) => {
               return (
                 <Link
                   key={item.label}
                   href={item.href ?? '/'}
-                  className={`text-sm font-medium transition ${
+                  className={`text-xs font-medium transition xl:text-sm ${
                     isActive(pathname, item.href) ? 'text-[#b35f6d]' : 'text-[#52202d] hover:text-[#b35f6d]'
                   }`}
                 >

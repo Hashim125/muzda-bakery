@@ -56,7 +56,7 @@ export default function AboutPage() {
                     >
                       <div className="flex md:block">
                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#7a2f3f] text-sm font-semibold text-white">
-                          {milestone.year.slice(0, 2)}
+                          {milestone.year.replace(/\D/g, '').slice(-2)}
                         </div>
                       </div>
                       <div className="grid gap-6 lg:grid-cols-[1fr_0.75fr]">

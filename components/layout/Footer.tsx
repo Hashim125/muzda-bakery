@@ -5,7 +5,7 @@ import { business, navigation } from '@/lib/site-data';
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-[#561924]/10 bg-[#27060e] text-[#f8f1ec]">
+    <footer className="mt-20 border-t border-[#7a2f3f]/10 bg-[#391720] text-[#f8f1ec]">
       <Container className="py-16">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-xl">
@@ -70,8 +70,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs tracking-[0.15em] text-[#c9b0a0]">
-          © {new Date().getFullYear()} Muzda Bakery. Built for a family bakery with real local character.
+        <div className="mt-12 border-t border-white/10 pt-6 text-xs tracking-[0.12em] text-[#d7c1ba]">
+          © {new Date().getFullYear()} Muzda Bakery. Built for a family bakery with real local character.{' '}
+          <a
+            href="https://hashimumarji.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#f0d0a3] transition hover:text-white"
+          >
+            Site by Hashim Umarji
+          </a>
         </div>
       </Container>
     </footer>

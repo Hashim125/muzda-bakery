@@ -504,32 +504,46 @@ export const products: ProductItem[] = [
 
 export const storyMilestones: StoryMilestone[] = [
   {
-    year: '1964',
-    title: 'The first ovens were lit',
+    year: '1983',
+    title: '73 Plashet Road was bought',
     copy:
-      'Muzda Bakery began with family recipes, long mornings, and a clear idea: make honest bakery food that people would keep coming back for.',
-    accent: 'Founding family chapter',
+      'The family bought 73 Plashet Road, setting up the first real chapter of the bakery story in East London.',
+    accent: 'First premises',
   },
   {
-    year: '1980s',
-    title: 'A neighbourhood regular',
+    year: '1984',
+    title: 'The first bakery oven at 73 Plashet Road',
     copy:
-      'The bakery became a familiar stop for tea-time biscuits, savouries, and fresh bread, growing by word of mouth rather than flash.',
-    accent: 'Community roots',
+      'The bakery started at 73 Plashet Road in December 1984. That same year, the family sold the premises and bought 46 Plashet Road.',
+    accent: 'Bakery begins',
   },
   {
-    year: '2000s',
-    title: 'From one generation to the next',
+    year: '1985',
+    title: 'The move to 46 Plashet Road',
     copy:
-      'Knowledge, recipes, and standards were passed forward, keeping the family character intact while serving a wider local crowd.',
-    accent: 'Grandfather to grandson',
+      'In July 1985, the bakery moved across the street to 46 Plashet Road and began trading from the new site.',
+    accent: 'Across the street',
   },
   {
-    year: 'Today',
-    title: 'Still made with the same care',
+    year: '1996',
+    title: 'Green Street became the retail bakery',
     copy:
-      'The bakery continues to serve East London with the same mix of craft, familiarity, and everyday reliability that built its reputation.',
-    accent: 'Serving East London',
+      'The bakery was bought on Green Street, creating the retail shop customers know today.',
+    accent: 'Retail shop',
+  },
+  {
+    year: '2000',
+    title: 'Maryland unit became the production base',
+    copy:
+      'The Maryland unit was bought for production. Until then, production had remained at 46 Plashet Road.',
+    accent: 'Production move',
+  },
+  {
+    year: '2017',
+    title: 'Maryland unit was handed over',
+    copy:
+      'The Maryland production unit was sold and handed over to different owners.',
+    accent: 'New ownership',
   },
 ];
 
